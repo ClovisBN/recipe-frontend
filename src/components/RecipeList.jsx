@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { getRecipes, deleteRecipe } from "../_help/Api"; // Assurez-vous de définir les fonctions d'API
-import Card from "./Card";
+import { getRecipes, deleteRecipe } from "../_help/Api";
+import Card from "./Card"; // Assurez-vous de définir ce composant
 
 const RecipeList = () => {
   const [recipes, setRecipes] = useState([]);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { getRecipe, updateRecipe, getIngredients } from "../_help/Api"; // Assurez-vous de définir les fonctions d'API
+import { getRecipe, updateRecipe, getIngredients } from "../_help/Api";
 
 const RecipeUpdateForm = () => {
   const { id } = useParams();

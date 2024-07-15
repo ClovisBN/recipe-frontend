@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { createRecipe, getIngredients } from "../_help/Api"; // Assurez-vous de définir les fonctions d'API
+import { createRecipe, getIngredients } from "../_help/Api";
 
 const RecipeForm = () => {
   const [name, setName] = useState("");
