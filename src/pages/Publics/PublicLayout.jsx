@@ -7,6 +7,7 @@ const PublicLayout = () => {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/login">Login</Link>
+        <Link to="/register">register</Link>
       </nav>
       <Outlet />
     </div>

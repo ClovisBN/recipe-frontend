@@ -2,6 +2,7 @@
 import PublicLayout from "../pages/Publics/PublicLayout";
 import HomePage from "../pages/Publics/HomePage";
 import LoginPage from "../pages/Publics/LoginPage";
+import RegisterPage from "../pages/Publics/RegisterPage";
 import ErrorBoundary from "../components/ErrorBoundary";
 // import { visitorMiddleware } from "../middleware/publicMiddleware";
 
@@ -12,6 +13,7 @@ const publicRoutes = {
   children: [
     { path: "", element: <HomePage /> },
     { path: "login", element: <LoginPage /> },
+    { path: "register", element: <RegisterPage /> },
   ],
 };
 

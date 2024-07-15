@@ -1,8 +1,13 @@
-// src/pages/LoginPage.js
 import React from "react";
+import Login from "../../components/Login";
 
 const LoginPage = () => {
-  return <div>Please log in</div>;
+  return (
+    <div>
+      <div>Please log in</div>
+      <Login />
+    </div>
+  );
 };
 
 export default LoginPage;

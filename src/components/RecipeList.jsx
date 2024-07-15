@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { getRecipes, deleteRecipe } from "../_help/Api"; // Assurez-vous de définir les fonctions d'API
 import Card from "./Card";
 
 const RecipeList = () => {
   const [recipes, setRecipes] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetchRecipes();
@@ -29,21 +27,12 @@ const RecipeList = () => {
     }
   };
 
-  const handleEdit = (id) => {
-    navigate(`/admin/recipes/edit/${id}`);
-  };
-
   return (
     <div>
       <h1>Liste des Recettes</h1>
       <div className="card-container">
         {recipes.map((recipe) => (
-          <Card
-            key={recipe.id}
-            recipe={recipe}
-            onEdit={handleEdit}
-            onDelete={handleDelete}
-          />
+          <Card key={recipe.id} recipe={recipe} onDelete={handleDelete} />
         ))}
       </div>
     </div>
